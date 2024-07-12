@@ -123,8 +123,8 @@ int main(int argc, char *argv[]) {
                 // Check if total allocated memory drops below the lower limit
                 if (total_allocated <= lower_limit_kb) {
                     printf("Lower limit reached, will now allocate memory intermittently...\n");
-                    snprintf(log_message, sizeof(log_message), "Policy2: Process (PID: %d), command: %s - memory usage dropped below lower limit: %ld KB", getpid(), argv[0], total_allocated);
-                    log_details(log_message);
+                    //snprintf(log_message, sizeof(log_message), "Policy2: Process (PID: %d), command: %s - memory usage dropped below lower limit: %ld KB", getpid(), argv[0], total_allocated);
+                    //log_details(log_message);
                     up = 1;
                 }
 
