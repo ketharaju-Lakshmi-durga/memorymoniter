@@ -104,8 +104,8 @@ int main(int argc, char *argv[]) {
 
                 total_allocated += ALLOCATION_SIZE / 1024;
                 printf("Allocated %ld KB of memory, Total allocated: %ld KB\n", ALLOCATION_SIZE / 1024, total_allocated);
-                snprintf(log_message, sizeof(log_message), "Policy1: Process (PID: %d), command: %s - memory usage crossed upper limit: %ld KB", getpid(), argv[0], total_allocated);
-                log_details(log_message);
+                //snprintf(log_message, sizeof(log_message), "Policy1: Process (PID: %d), command: %s - memory usage crossed upper limit: %ld KB", getpid(), argv[0], total_allocated);
+               // log_details(log_message);
 
                 sleep(SLEEP_TIME);
             }
